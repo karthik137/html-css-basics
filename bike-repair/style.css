@@ -143,3 +143,8 @@ p {
     margin-top: 10px;
 
 }
+
+.cards a {
+    color: white;
+    text-decoration: none;
+}
