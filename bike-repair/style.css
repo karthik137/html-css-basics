@@ -29,6 +29,8 @@ main {
 .cards {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+
 }
 
 .card1 {
@@ -44,7 +46,7 @@ main {
 .card2 {
     background-image: url("images/image-background-card2.jpg");
     background-position: bottom;
-    min-height: 250px;
+    min-height: 180px;
     width: 30%;
 }
 
@@ -100,6 +102,14 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 p {
     line-height: 1.75rem;
@@ -107,3 +117,29 @@ p {
 
 }
 
+.cards p {
+    font-size: 0.85rem;
+    line-height: 0.85rem;
+    margin: 10px 30px 20px 30px;
+}
+
+.delivery-icon {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 10px;
+}
+
+
+.service-icon {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 10px;
+
+}
+
+.call-icon {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 10px;
+
+}
