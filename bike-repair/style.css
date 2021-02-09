@@ -1,6 +1,10 @@
+html {
+    height: 100%;
+}
+
 .container {
     width: 1024px;
-    background-color: rgb(6, 90, 13);
+    /* background-color: rgb(6, 90, 13); */
     /* height: 300px; */
     min-height: 300px; 
     margin-left: auto;
@@ -8,16 +12,98 @@
 }
 
 header {
-    background-color: rgb(10, 172, 10);
-    min-height: 100px;
+    /* background-color: rgb(10, 172, 10); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 main {
-    background-color: aqua;
     min-height: 300px;
+    display: flex;
+    align-items: center;
 }
 
 .cards {
-    background-color: aquamarine;
-    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.card1 {
+    background-image: url("images/image-background-card1.jpg");
+    width: 30%;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+
+.card2 {
+    background-image: url("images/image-background-card2.jpg");
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+
+.card3 {
+    background-image: url("images/image-background-card3.jpg");
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+}
+
+.herobox1 {
+    flex: 2;
+    padding-right: 30px;
+    
+}
+
+.herobox2 {
+    flex: 1;
+}
+
+body {
+    /* background-color: #FC5E55; */
+    background-image: linear-gradient(#FC5E55,#FA4083);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+}
+
+
+/* .navs {
+    align-items: flex-end;
+}
+
+.logo {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+} */
+
+.navs {
+    display: flex;
+}
+
+nav {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+p {
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+
+}
+
