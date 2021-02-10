@@ -18,6 +18,7 @@ header {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
 }
 
 main {
@@ -166,4 +167,18 @@ p {
     display: inline-block;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 2px 2px black;
+}
+
+.navs a {
+    text-decoration: none;
+    padding: 11px 25px 11px 25px;
+}
+
+.mybuttonMenu{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    border: 1px;
+    border: 1px solid white;
+    margin-left: 10px;
 }
