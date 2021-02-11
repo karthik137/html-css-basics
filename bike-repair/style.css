@@ -1,5 +1,6 @@
 html {
-    height: 100%;
+    background-image: linear-gradient(#FC5E55,#FA4083);
+
 }
 
 .container {
@@ -72,11 +73,14 @@ main {
 
 body {
     /* background-color: #FC5E55; */
-    background-image: linear-gradient(#FC5E55,#FA4083);
+    /* background-image: linear-gradient(#FC5E55,#FA4083); */
     /* font-family: Arial, Helvetica, sans-serif; */
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.125rem;
+    background-image: url("images/image-lion-background.png");
+    background-position: top center ;
+    background-repeat: no-repeat;
 }
 
 
@@ -169,6 +173,12 @@ p {
     box-shadow: 0px 2px 2px black;
 }
 
+/* pseudo class*/
+.mybutton:hover {
+    background-color: greenyellow;
+    transition-duration: 1s;
+}
+
 .navs a {
     text-decoration: none;
     padding: 11px 25px 11px 25px;
@@ -177,8 +187,85 @@ p {
 .mybuttonMenu{
     color: white;
     font-family: 'Roboto', sans-serif;
-    display: inline-block;
+    display: block;
     border: 1px;
     border: 1px solid white;
     margin-left: 10px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+
+
+}
+
+/* .tbox :last-child {
+    font-size: 0.8rem;
+} */
+
+.tbox p:last-of-type {
+    font-size: 0.8rem;
+}
+
+.dropDownMenu {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    z-index: 1;
+    padding-top: 20px;
+    
+    
+}
+
+.navbutton:hover .dropDownMenu {
+    display: block;
+    padding-top: 10px;
+
+}
+
+.navbutton:hover .mybuttonMenu {
+    background-color: #fa4239;
+}
+
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
+}
+
+.inputwrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=text],input[type=email], textarea {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.margin-right-a {
+    margin-right: 20px;
+
+}
+
+form {
+    margin: 40px 0px;
 }
