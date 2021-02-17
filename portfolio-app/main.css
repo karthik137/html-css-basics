@@ -5,13 +5,14 @@ body {
 }
 
 .container {
-    background-color: rgb(142, 253, 207);
+    /* background-color: rgb(142, 253, 207); */
     min-height: 500px;
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 140px;
 }
 
 /* h1 {
@@ -19,16 +20,92 @@ body {
 } */
 
 .col {
-    background-color: rgb(238, 89, 158);
+    /* background-color: rgb(238, 89, 158); */
     min-height: 200px;
     width: 30%;
     margin-bottom: 40px;
+    background-color: rgb(48, 207, 141);
+
 
 }
 
-.hide-desktop-only {
+.header-container {
+    background-color: rgb(68, 68, 68);
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navi {
+    margin-left: 30px;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.825rem;
+    padding: 20px 25px;
+    line-height: 1.5rem;
+}
+
+p::first-line {
+    font-weight: 700;
+}
+
+
+
+.logo {
+    color: #EBEBEB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.925rem;
+    margin-right: 40px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.mobie-wrapper {
     display: none;
 }
+
+.mob-nav {
+    display: none;
+}
+
+/* .logo::first-line(3){
+    font-weight: ;
+} */
+
+/* .hide-desktop-only {
+    display: none;
+} */
 
 /* Tablet View */
 @media (max-width: 768px){
@@ -39,14 +116,18 @@ body {
     width: 45%;
 }
 
-.hide-desktop-only {
+/* .hide-desktop-only {
     display: block;
+} */
+
+.mobie-wrapper {
+    display: none;
 }
 
 }
 
 /* Mobile View */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     /* h1 {
         color: black;
     } */
@@ -54,8 +135,44 @@ body {
         width: 100%;
     }
 
-    .hide-mobile {
+    /* .hide-mobile {
+        display: none;
+    } */
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .navigation {
         display: none;
     }
+
+    .logo {
+        padding: 50px 0 ;
+    }
+
+    .navi {
+        margin-left: 0px;
+    }
+    .header-container {
+        position: relative;
+    }
+
+    .container {
+        padding-top: 0px;
+
+    }
+
+    .mobie-wrapper {
+        display: block;
+    }
+
+
+    
+
+
 }
+
+
 
